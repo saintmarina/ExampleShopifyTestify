@@ -12,6 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExampleShopifyTestify"
         tools:targetApi="31">
+        <!--This activity is needed to make the Screenshot Test to work
+            name: must be dev.testify.ComposableTestActivity
+            theme: must be Theme.AppCompat or a derivative
+            exported: must be false-->
+        <activity
+            android:name="dev.testify.ComposableTestActivity"
+            android:theme="@style/Theme.AppCompat"
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
